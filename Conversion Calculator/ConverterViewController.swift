@@ -16,7 +16,11 @@ class ConverterViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func Converter(_ sender: UIButton) {
+        let alert = UIAlertController(title: "test", message: "test2", preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "test3", style: UIAlertAction.Style.cancel, handler: nil))
+    }
+    
     /*
     // MARK: - Navigation
 
