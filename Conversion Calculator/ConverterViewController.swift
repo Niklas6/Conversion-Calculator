@@ -43,7 +43,7 @@ class ConverterViewController: UIViewController {
             
         }))
         
-        alert.addAction(UIAlertAction(title: "kilometers to fahrenheit", style: UIAlertAction.Style.default, handler: {
+        alert.addAction(UIAlertAction(title: "kilometers to miles", style: UIAlertAction.Style.default, handler: {
             (alertAction) -> Void in
             self.first.text = "km"
             self.second.text = "mi"
