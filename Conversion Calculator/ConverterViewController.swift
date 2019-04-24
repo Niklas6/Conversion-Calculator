@@ -14,6 +14,7 @@ class ConverterViewController: UIViewController {
     @IBOutlet weak var second: UITextField!
     
     var number = ""
+    var n1 = 0.0
     var textone = "°F"
     var texttwo = "°C"
     override func viewDidLoad() {
