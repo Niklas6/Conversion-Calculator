@@ -35,7 +35,10 @@ class ConverterViewController: UIViewController {
             (alertAction) -> Void in
             self.textone = "°C"
             self.texttwo = "°F"
-            self.first.text = "°C"
+            let number1 = Double(self.number) ?? 0
+            let n1 = (number1-32)*5/9
+            print(n1)
+            self.first.text = "\(n1)" + "°C"
             self.second.text = self.number + self.texttwo
             
         }))
