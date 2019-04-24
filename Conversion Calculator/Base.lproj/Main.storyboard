@@ -161,6 +161,9 @@
                                                         <state key="normal" title="1">
                                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="Eins:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K6r-nW-ak5"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zHk-Q0-cp7">
                                                         <rect key="frame" x="125.5" y="0.0" width="124" height="91.5"/>
