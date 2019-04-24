@@ -12,9 +12,10 @@ class ConverterViewController: UIViewController {
 
     @IBOutlet weak var first: UITextField!
     @IBOutlet weak var second: UITextField!
-    
+    var pl = 1.0
     var number = ""
     var n1 = 0.0
+    var p = true
     var textone = "°F"
     var texttwo = "°C"
     override func viewDidLoad() {
@@ -26,9 +27,224 @@ class ConverterViewController: UIViewController {
     
     @IBAction func Eins(_ sender: UIButton) {
         number = number + "1"
-        self.second.text = self.number + texttwo
-        
+        var number1 = Double(self.number) ?? 0
+        number1 = number1 * pl
+        if textone == "°C" {
+            self.n1 = (number1-32)*5/9
+        } else if textone == "°F" {
+            self.n1 = (number1*9/5)+32
+        } else if textone == "km"{
+            self.n1 = 1.60934*number1
+        } else if textone == "km"{
+            self.n1 = number1/1.60934
+        }
+        self.first.text = "\(self.n1)" + textone
+        self.second.text = "\(number1)" + texttwo
     }
+    
+    @IBAction func Zwei(_ sender: UIButton) {
+        number = number + "2"
+        var number1 = Double(self.number) ?? 0
+        number1 = number1 * pl
+        if textone == "°C" {
+            self.n1 = (number1-32)*5/9
+        } else if textone == "°F" {
+            self.n1 = (number1*9/5)+32
+        } else if textone == "km"{
+            self.n1 = 1.60934*number1
+        } else if textone == "km"{
+            self.n1 = number1/1.60934
+        }
+        self.first.text = "\(self.n1)" + textone
+        self.second.text = "\(number1)" + texttwo    }
+    
+    @IBAction func Drei(_ sender: UIButton) {
+        number = number + "3"
+        var number1 = Double(self.number) ?? 0
+        number1 = number1 * pl
+        if textone == "°C" {
+            self.n1 = (number1-32)*5/9
+        } else if textone == "°F" {
+            self.n1 = (number1*9/5)+32
+        } else if textone == "km"{
+            self.n1 = 1.60934*number1
+        } else if textone == "km"{
+            self.n1 = number1/1.60934
+        }
+        self.first.text = "\(self.n1)" + textone
+        self.second.text = "\(number1)" + texttwo    }
+    
+    @IBAction func Vier(_ sender: UIButton) {
+        number = number + "4"
+        var number1 = Double(self.number) ?? 0
+        number1 = number1 * pl
+        if textone == "°C" {
+            self.n1 = (number1-32)*5/9
+        } else if textone == "°F" {
+            self.n1 = (number1*9/5)+32
+        } else if textone == "km"{
+            self.n1 = 1.60934*number1
+        } else if textone == "km"{
+            self.n1 = number1/1.60934
+        }
+        self.first.text = "\(self.n1)" + textone
+        self.second.text = "\(number1)" + texttwo    }
+    
+    @IBAction func Funf(_ sender: UIButton) {
+        number = number + "5"
+        var number1 = Double(self.number) ?? 0
+        number1 = number1 * pl
+        if textone == "°C" {
+            self.n1 = (number1-32)*5/9
+        } else if textone == "°F" {
+            self.n1 = (number1*9/5)+32
+        } else if textone == "km"{
+            self.n1 = 1.60934*number1
+        } else if textone == "km"{
+            self.n1 = number1/1.60934
+        }
+        self.first.text = "\(self.n1)" + textone
+        self.second.text = "\(number1)" + texttwo        }
+    
+    @IBAction func Sechs(_ sender: UIButton) {
+        number = number + "6"
+        var number1 = Double(self.number) ?? 0
+        number1 = number1 * pl
+        if textone == "°C" {
+            self.n1 = (number1-32)*5/9
+        } else if textone == "°F" {
+            self.n1 = (number1*9/5)+32
+        } else if textone == "km"{
+            self.n1 = 1.60934*number1
+        } else if textone == "km"{
+            self.n1 = number1/1.60934
+        }
+        self.first.text = "\(self.n1)" + textone
+        self.second.text = "\(number1)" + texttwo
+    }
+    
+    @IBAction func Sieben(_ sender: UIButton) {
+        number = number + "7"
+        var number1 = Double(self.number) ?? 0
+        number1 = number1 * pl
+        if textone == "°C" {
+            self.n1 = (number1-32)*5/9
+        } else if textone == "°F" {
+            self.n1 = (number1*9/5)+32
+        } else if textone == "km"{
+            self.n1 = 1.60934*number1
+        } else if textone == "km"{
+            self.n1 = number1/1.60934
+        }
+        self.first.text = "\(self.n1)" + textone
+        self.second.text = "\(number1)" + texttwo        }
+    
+    @IBAction func Acht(_ sender: UIButton) {
+        number = number + "8"
+        var number1 = Double(self.number) ?? 0
+        number1 = number1 * pl
+        if textone == "°C" {
+            self.n1 = (number1-32)*5/9
+        } else if textone == "°F" {
+            self.n1 = (number1*9/5)+32
+        } else if textone == "km"{
+            self.n1 = 1.60934*number1
+        } else if textone == "km"{
+            self.n1 = number1/1.60934
+        }
+        self.first.text = "\(self.n1)" + textone
+        self.second.text = "\(number1)" + texttwo
+    }
+    
+    @IBAction func Neun(_ sender: UIButton) {
+        number = number + "9"
+        var number1 = Double(self.number) ?? 0
+        number1 = number1 * pl
+        if textone == "°C" {
+            self.n1 = (number1-32)*5/9
+        } else if textone == "°F" {
+            self.n1 = (number1*9/5)+32
+        } else if textone == "km"{
+            self.n1 = 1.60934*number1
+        } else if textone == "km"{
+            self.n1 = number1/1.60934
+        }
+        self.first.text = "\(self.n1)" + textone
+        self.second.text = "\(number1)" + texttwo
+    }
+    
+    
+    
+    
+    @IBAction func Plus(_ sender: UIButton) {
+        if self.pl == 0 {
+            self.pl = 1
+        } else {
+            self.pl = -1
+        }
+        var number1 = Double(self.number) ?? 0
+        number1 = number1 * pl
+        if textone == "°C" {
+            self.n1 = (number1-32)*5/9
+        } else if textone == "°F" {
+            self.n1 = (number1*9/5)+32
+        } else if textone == "km"{
+            self.n1 = 1.60934*number1
+        } else if textone == "km"{
+            self.n1 = number1/1.60934
+        }
+        self.first.text = "\(self.n1)" + textone
+        self.second.text = "\(number1)" + texttwo
+    }
+    
+    @IBAction func Null(_ sender: UIButton) {
+        number = number + "0"
+        var number1 = Double(self.number) ?? 0
+        number1 = number1 * pl
+        if textone == "°C" {
+            self.n1 = (number1-32)*5/9
+        } else if textone == "°F" {
+            self.n1 = (number1*9/5)+32
+        } else if textone == "km"{
+            self.n1 = 1.60934*number1
+        } else if textone == "km"{
+            self.n1 = number1/1.60934
+        }
+        self.first.text = "\(self.n1)" + textone
+        self.second.text = "\(number1)" + texttwo
+    }
+    
+    
+    @IBAction func Punkt(_ sender: UIButton) {
+        if p {
+            number = number + "."
+            var number1 = Double(self.number) ?? 0
+            number1 = number1 * pl
+            if textone == "°C" {
+            self.n1 = (number1-32)*5/9
+            } else if textone == "°F" {
+                self.n1 = (number1*9/5)+32
+            } else if textone == "km"{
+                self.n1 = 1.60934*number1
+            } else if textone == "km"{
+                self.n1 = number1/1.6
+            }
+            self.first.text = "\(self.n1)" + textone
+            self.second.text = "\(number1)" + texttwo
+            p = false
+        }
+    }
+    
+    @IBAction func Zuruck(_ sender: UIButton) {
+        self.pl = 1.0
+        self.number = ""
+        self.n1 = 0.0
+        self.p = true
+        self.first.text = self.textone
+        self.second.text = self.texttwo    }
+    
+    
+    
     
     
     @IBAction func Converter(_ sender: UIButton) {let alert = UIAlertController(title: "", message: "Choose Converter", preferredStyle: UIAlertController.Style.alert)
@@ -36,11 +252,11 @@ class ConverterViewController: UIViewController {
             (alertAction) -> Void in
             self.textone = "°C"
             self.texttwo = "°F"
-            let number1 = Double(self.number) ?? 0
-            let n1 = (number1-32)*5/9
-            print(n1)
-            self.first.text = "\(n1)" + "°C"
-            self.second.text = self.number + self.texttwo
+            var number1 = Double(self.number) ?? 0
+            number1 = number1 * self.pl
+            self.n1 = (number1-32)*5/9
+            self.first.text = "\(self.n1)" + "°C"
+            self.second.text = "\(number1)" + self.texttwo
             
         }))
         
@@ -48,8 +264,11 @@ class ConverterViewController: UIViewController {
             (alertAction) -> Void in
             self.textone = "°F"
             self.texttwo = "°C"
-            self.first.text = "°F"
-            self.second.text = self.number + self.texttwo
+            var number1 = Double(self.number) ?? 0
+            number1 = number1 * self.pl
+            self.n1 = (number1*9/5)+32
+            self.first.text = "\(self.n1)" + "°F"
+            self.second.text = "\(number1)" + self.texttwo
             
         }))
         
@@ -57,8 +276,11 @@ class ConverterViewController: UIViewController {
             (alertAction) -> Void in
             self.textone = "km"
             self.texttwo = "mi"
-            self.first.text = "km"
-            self.second.text = self.number + self.texttwo
+            var number1 = Double(self.number) ?? 0
+            number1 = number1 * self.pl
+            self.n1 = number1*1.60934
+            self.first.text = "\(self.n1)" + "km"
+            self.second.text = "\(number1)" + self.texttwo
             
         }))
         
@@ -66,8 +288,11 @@ class ConverterViewController: UIViewController {
             (alertAction) -> Void in
             self.textone = "mi"
             self.texttwo = "km"
-            self.first.text = "mi"
-            self.second.text = self.number + self.texttwo
+            var number1 = Double(self.number) ?? 0
+            number1 = number1 * self.pl
+            self.n1 = number1 / 1.60934
+            self.first.text = "\(self.n1)" + "mi"
+            self.second.text = "\(number1)" + self.texttwo
         }))
         
         
